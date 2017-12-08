@@ -28,9 +28,10 @@
 	\section{소프트웨어 개요}
 	본 소프트웨어는 사용자들의 컴퓨터에 존재하는 파일들(ex. 동영상, 이미지, 문서 등)의 위치를 파악하여 삭제 및 관리를 용이하게 할 수 있도록 도와주는 소프트웨어 입니다.
 	\section{소프트웨어 사용}
-	다음은 소프트웨어에 대한 설명이다.  실행창에는  \textbf{검사시작, 환경설정}버튼도있고,  \textbf{파일종류별로 볼수있는 창}이 있다.
+	다음은 소프트웨어에 대한 설명이다.  실행창에는  \textbf{검사시작, 환경설정}버튼도있고,  \textbf{파일종류별로 볼수있는 창}(동영상,이미지,문서,기타)이 있다. 
 		\subsection{exe실행파일 실행화면}
-		크게 \textbf{검색시작, 환경설정 ,파일종류 }를 볼수 있다.
+		크게 \textbf{검색시작, 환경설정 ,파일종류(동영상,이미지,문서,기타)}를 볼수 있다.
+		검색시작을 누르면 파일 추출후 검색을 시작한다.
 	\begin{figure}[h]
 		\centering
 		\includegraphics[width=0.7\textwidth]{Figures/exe2}
@@ -47,17 +48,29 @@
 		\label{fig:catalog}
 	\end{figure}
 
-
-
 		\subsection{검색 완료창}
-		검색이 완료된후 \textbf{파일명, 파일크기, 최근사용일}로 구분되어 파일이 정리되어 뜬다.
+		검색이 완료된후 \textbf{파일저장위치,파일명, 파일크기, 최근사용일}로 구분되어 파일이 정리되어 뜬다.
+		그외에도 총 파일 검사한수도 함께 뜬다.
 	\begin{figure}[h]
 		\centering
 		\includegraphics[width=0.7\textwidth]{Figures/complete}
 		\caption{complete}
 		\label{fig:complete}
 	\end{figure}
-
+		\subsection{catalog종류별}
+		보기와 같이 \textbf{파일위치,파일명,크기,최근사용일},이 뜬다. 
+	\begin{figure}[h]
+		\centering
+		\includegraphics[width=0.7\textwidth]{Figures/avi}
+		\caption{catalog: 동영상}
+		\label{fig:avi}
+	\end{figure}
+	\begin{figure}[h]
+		\centering
+		\includegraphics[width=0.7\textwidth]{Figures/jpg}
+		\caption{catalog: 이미지}
+		\label{fig:jpg}
+	\end{figure}
 	\section{환경설정}
 	다음은 환경설정에 대한 설명이다.	환경설정은 크게 \textbf{검색폴더 선택, 동영상 확장자, 이미지 확장자, 문서 확장자, 기타 확장자, 검사예외 폴더, 최종 사용일자 설정} 등으로 나뉘어져 있다.
 	
