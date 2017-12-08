@@ -1,0 +1,70 @@
+% !TEX TS-program = pdflatex
+
+% !TEX encoding = UTF-8 Unicode
+
+
+
+\documentclass[letterpaper, 11pt]{article} % A4 형식 및 글자 크기
+
+
+% layout/spacing related packages
+
+\usepackage[margin=0.5in]{geometry}
+
+\usepackage{kotex}	% 한글 사용 가능
+
+\usepackage{graphicx}
+
+\title{CapacityManger Bug and Improvement}
+
+\author{황연수} 
+
+\begin{document}
+	
+	\maketitle \LARGE Caption Manager Source의 문제점이나 부족한점 and 개선점	\newline
+	
+	\bf |Bug| \newline
+	
+	\large 1. 한번에 전체 선택이 불가능 \newline
+	
+           2. 환경설정에서 폴더 선택하고 나갔다가 다시 환경설정 들어가면
+			  선택한 폴더위치가 초기화되버림 \newline
+	
+		   3. 파일명, 파일크기, 마지막사용 날짜별 정리 기능 없음 \newline
+	
+		   4. 환경설정에 폴더 설정 부분 복잡성 \newline
+	
+		   5. 검색 시간이 오래걸리거나 검색이 마무리 되지 않을때가 있음
+		   ('폴더 취합 중'이 오래걸림) \newline \newline
+		   
+	\begin{figure}[h]
+		
+		\centering
+		
+		\includegraphics[height=0.35\textheight]{"Long Time"}
+		
+		\caption{취합 중 멈춤}
+		
+		\label{fig:long-time}
+		
+	\end{figure}
+
+	\newpage
+       
+	\bf \LARGE |Improvement| \newline
+	 
+	\large 1. 몇일 이상 미사용 파일 삭제 기능 \newline
+	
+	       2. 파일 이름으로 검색 기능 \newline
+	       
+		   3. 디스크 정리 기능 \newline
+		   
+		   4. 최근에 사용한 파일들 보여주기 \newline
+		   
+		   5. 자주 사용하는 폴더 보여주기 \newline
+		   
+		   6. 전체 선택 기능(다중 선택은 가능하지만 한번에 전체 선택 기능 없음) \newline
+		   
+		   7. 파일명, 파일크기, 마지막사용 날짜별 정리 기능
+	
+\end{document}
